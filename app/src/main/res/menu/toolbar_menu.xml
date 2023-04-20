@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/notification"
+        android:title="Notification"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_notifications"/>
+
+    <item android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        android:id="@+id/search"
+        android:title="Search"/>
+
+    <item android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+        android:title="Account"
+        app:showAsAction="always"/>
+<!--    <item android:icon="@drawable/ic_deshboad"-->
+<!--        android:id="@+id/deshboards"-->
+<!--       app:showAsAction="always"-->
+<!--        android:title="Dashboard"/>-->
+</menu>

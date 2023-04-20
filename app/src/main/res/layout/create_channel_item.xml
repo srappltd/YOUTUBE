@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use Youtube clone as.."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtChannelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edtbg"
+            android:hint="Channel name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edtbg"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="By creating new channel accept our terms and condition" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="cancel"-->
+        <!--            android:textSize="16dp"-->
+        <!--            android:gravity="end"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:includeFontPadding="false"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:id="@+id/txtCancel"/>-->
+
+        <Button
+            android:id="@+id/btnCreateChannel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#E91E63"
+            android:padding="10dp"
+            android:text="create channel" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

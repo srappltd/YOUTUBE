@@ -1,0 +1,107 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    // Add the Crashlytics Gradle plugin
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.sandhya.youtube'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.sandhya.youtube"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+//    implementation "androidx.media3:media3-exoplayer:1.0.0-beta03"
+//    implementation "androidx.media3:media3-ui:1.0.0-beta03"
+//    implementation "androidx.media3:media3-exoplayer-dash:1.0.0-beta03"
+
+    //tag library
+    implementation "com.hootsuite.android:nachos:1.1.1"
+
+    // Dependency FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:6.2.1'
+
+    // Dependency for Firebase REaltime Database
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+
+//    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.4'
+//    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.4'
+
+    // dependency for exoplayer
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.2'
+
+// for core support in exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.8.2'
+
+// for adding dash support in our exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.8.2'
+
+// for adding hls support in exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.8.2'
+
+// for smooth streaming of video in our exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.8.2'
+
+// for generating default ui of exoplayer
+
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.8.2'
+
+    //search
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+
+
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".fragements.ChannelDeshboardFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#99FF0000"
+            app:contentScrim="?android:attr/colorControlHighlight"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <TextView
+                android:id="@+id/txtChannelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="channel name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/DESHBOARD"
+                app:menu="@menu/deshboard_menu" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#99FF0000"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@color/black"
+                android:id="@+id/imgProfile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Channel name"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                android:id="@+id/txtChannelName2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Description"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:id="@+id/txtDescription"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99FF0000"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/colorPrimaryText"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            android:id="@+id/tabLayout"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="@color/colorDivider"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:id="@+id/viewPager"/>
+
+</LinearLayout>

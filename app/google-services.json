@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212819640000",
+    "project_id": "fir-5f26c",
+    "storage_bucket": "fir-5f26c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212819640000:android:2ce701659f222287e07725",
+        "android_client_info": {
+          "package_name": "com.sandhya.youtube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212819640000-td02hrbkn7ukou30kro8h1i1n0ohj3r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Z1zU5NYbBtchE8WIWf00yrb_zaAYRi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212819640000-td02hrbkn7ukou30kro8h1i1n0ohj3r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
